@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="bank.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="comebacker/css.css">
+    <link rel="stylesheet"  href="/Курсовая 5 семестр/comebacker/send__form.css"
+</head>
+<body>
+    <div class="wrapper">
+       
+        <div class="header">
+            <a href="" class="header__logo">
+                <img src="img/logo.png" alt="Логотип">
+            </a>
+            <div class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Cash credit</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Credit for cars</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Education loan</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">About us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="main__bg">
+                <h1 class="main__title">Apply for a loan</h1>
+                <h1 class="main__title_shadow">You can get a cash loan with a rate of 6%</h1>
+                <div class="bg__bg"></div>  
+            </div>
+            <div class="main__plus plus">
+                <div class="plus__title">Why are we the best?</div>
+                <div class="plus__main">
+                    <div class="plus__div1">
+                        <div class="plus__logo">
+                            <img src="img/pasport.png" alt="Pasport">
+                        </div>
+                        <div class="plus__text">To get a loan, you just need to present your passport.</div>
+                    </div>
+                    <div class="plus__div2">
+                        <div class="plus__logo">
+                            <img src="img/money.png" alt="Money">
+                        </div>
+                        <div class="plus__text">Money will come to the card in a minute.</div>
+                    </div>
+                    <div class="plus__div3">
+                        <div class="plus__logo">
+                            <img src="img/online.png" alt="Online">
+                        </div>
+                        <div class="plus__text">You can apply for a loan online.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__form form">
+                <div class="form__title">Calculate loan</div>
+                <div class="send__form">
+                    <div class="send__screen">
+                        <p class="send__text">Hello!<br>In the near future your application will be processed.<br> Within 24 hours, you will be called to clarify the details!</p>
+                    </div>
+                </div>
+                <div class="form__main">
+                    
+                    <div class="form__credit">
+                        <div class="form__input input">
+                            <div class="input__text" style="font-weight: 600; font-size: 30px">money</div>
+                            <input type="text" min="100000" max="10000000" step="100000"  placeholder="Enter loan amount*" class="input__money">
+                            <div class="input__div">
+                                <input type="range" min="100000"  max="1000000" step="100000" value="0"class="input__range">
+                                <div class="input__h1"></div> 
+                            </div>
+                            <div class="input__date date">
+                                <p class="date__year">Credit term</p>
+                                <input type="text" max="3" min="1" value="1"  class="data__input">
+                                <p class="date__month">Monthly payment</p>
+                                <h2 class="date__pay"></h2>
+                                <input type="range" min="1"  max="3" step="1" value="0" class="data__range">
+                            </div>
+                            
+                            <select class="input__select">
+                                <option selected="Purpose of the loan">Purpose of the loan</option>
+                                <option>Repair</option>
+                                <option>Real estate</option>
+                                <option>Automobile</option>
+                                <option>Business</option>
+                                <option>Treatment</option>
+                                <option>Travel</option>
+                                <option>Other</option>
+                            </select>
+
+                        </div>
+                        <div class="form__info info">
+                            <div class="info__text" style="font-weight: 600; font-size: 30px">Contact details</div>
+                            <input type="text" class="info__input" placeholder="Enter your full name*">
+                            <div class="info__connection">
+                                <input id="form" type="text" placeholder="Mobile number*" class="info__mobile">
+                                <input id="form" type="text" placeholder="Mail*" class="info__mail">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__details details">
+                        <div class="details__pasport pasport">
+                            <div class="pasport__text" style="font-weight: 600; font-size: 30px;">Fill in your passport details</div>
+                            <div class="pasport__info">
+                                <input id="form" type="text" class="pasport__series" placeholder="Enter the passport series*"></input>
+                                <input id="form" type="text" class="pasport__extradition" placeholder="Passport issue date">
+                            </div>
+                            <input id="form" type="text" class="pasport__issued" placeholder="Issued by*">
+                            <div class="pasport__date">
+                                <input id="form" type="text" class="pasport__birth" placeholder="Date of Birth*">
+                                <input id="form" type="text" class="pasport__birth_date" placeholder="Passport issue date">
+                            </div>
+                            <p class="pasport__registration" style="font-weight: 600; font-size: 30px;">Permanent registration address</p>
+                        </div>
+                        <div class="form__registration regist">
+                            <input id="form" type="text" placeholder="Region*" class="regist__region">
+                            <input id="form" type="text" placeholder="City*" class="regist__city">
+                            <input id="form" type="text" placeholder="Street*" class="regist__street">
+                            <div class="regist__flat_date">
+                                <input id="form" placeholder="House" type="text" class="regist__house">
+                                <input id="form" placeholder="Corp" type="text" class="regist__corps">
+                                <input id="form" placeholder="Structure" type="text" class="regist__structure">
+                                <input id="form" placeholder="Flat" type="text" class="regist__flat">
+                            </div>
+                            <div class="regist__button">
+                                <button class="regist__send">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="main__slider slider">
+                <div class="slider__left">
+                    <button class="slider__button_left" ><</button>
+                </div>
+                
+                <div class="slider__card_main">
+                    <div class="slider__content">
+                        <div class="img__slider ready">
+                            <img class="slider__img" src="img/img__slider/1.png" alt="">
+                        </div>
+                        <div class="img__slider">
+                            <img class="slider__img" src="img/img__slider/2.png" alt="">
+                        </div>
+                        <div class="img__slider">
+                            <img class="slider__img" src="img/img__slider/3.png" alt="">                    
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider__right">
+                    <button class="slider__button_right">></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__line">
+                <a href="" class="footer__vk">
+                    <img src="img/vk.png" alt="Vk">
+                </a>
+                <a href="" class="footer__inst">
+                    <img src="img/inst.png" alt="Instagram">
+                </a>
+                <a href="" class="footer__face">
+                    <img src="img/face.png" alt="Facebook">
+                </a>
+                <a href="" class="footer__tg">
+                    <img src="img/tg.png" alt="Telegram">
+                </a>
+            </div>
+        </div>
+        <div class="comebeak">
+            <div class="comebeak__screen screen">
+                <div class="feedback__sendbox">
+                    <p class="feedback__sends">Wait.<br>They will call you<br> in a few seconds!</p>
+                </div>
+                <div class="screen__feedback feedback">
+                    <p style="font-weight: 600;font-size: 25px;" class="feedback__title">Fill out the callback form</p>
+                    <input type="text" placeholder="FIO*" class="feedback__fio">
+                    <input type="text" placeholder="Number*" class="feedback__mobile">
+                    <p style="opacity: 0.6;" class="feedback__text">We will respond immediately, on the same day</p>
+                    <button class="feedback__send">SEND</button>
+                </div>
+                <div class="screen__credit">
+                    <p style="font-weight: 600;font-size: 25px;" class="credit__title">Please rate us!</p>
+                    <div class="credit__quality quality">
+                        <p class="quality__text">Rate the quality of service</p>
+                        <input type="checkbox" class="quality__input">
+                        <input type="checkbox" class="quality__input">
+                        <input type="checkbox" class="quality__input">
+                        <input type="checkbox" class="quality__input">
+                        <input type="checkbox" class="quality__input">
+                        <input type="checkbox" class="quality__input">
+                        <input type="checkbox" class="quality__input">
+                        <input type="checkbox" class="quality__input">
+                        <input type="checkbox" class="quality__input">
+                        <input type="checkbox" class="quality__input">
+                    </div>
+                    <div class="credit__site site">
+                        <p class="site__text">Rate our site</p>
+                        <input type="checkbox" class="site__input">
+                        <input type="checkbox" class="site__input">
+                        <input type="checkbox" class="site__input">
+                        <input type="checkbox" class="site__input">
+                        <input type="checkbox" class="site__input">
+                        <input type="checkbox" class="site__input">
+                        <input type="checkbox" class="site__input">
+                        <input type="checkbox" class="site__input">
+                        <input type="checkbox" class="site__input">
+                        <input type="checkbox" class="site__input">
+                    </div>
+                    <div class="credit__communication communication">
+                        <p class="communication__text">Rate communication</p>
+                        <input type="checkbox" class="communication__input">
+                        <input type="checkbox" class="communication__input">
+                        <input type="checkbox" class="communication__input">
+                        <input type="checkbox" class="communication__input">
+                        <input type="checkbox" class="communication__input">
+                        <input type="checkbox" class="communication__input">
+                        <input type="checkbox" class="communication__input">
+                        <input type="checkbox" class="communication__input">
+                        <input type="checkbox" class="communication__input">
+                        <input type="checkbox" class="communication__input">
+                    </div>
+                    <div class="credit__services services">
+                        <p class="services__text">Rate our services</p>
+                        <input type="checkbox" class="services__input">
+                        <input type="checkbox" class="services__input">
+                        <input type="checkbox" class="services__input">
+                        <input type="checkbox" class="services__input">
+                        <input type="checkbox" class="services__input">
+                        <input type="checkbox" class="services__input">
+                        <input type="checkbox" class="services__input">
+                        <input type="checkbox" class="services__input">
+                        <input type="checkbox" class="services__input">
+                        <input type="checkbox" class="services__input">
+                    </div>
+                    <button class="screen__close">Close</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bank.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
