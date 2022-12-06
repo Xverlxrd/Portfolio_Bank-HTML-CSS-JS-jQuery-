@@ -1,0 +1,128 @@
+.comebeak{
+    position: fixed;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    top: 100px;
+    z-index: 999999999;
+    display: none;
+}
+
+
+.comebeak__screen{
+    margin: 0 auto;
+    border-radius: 70px;
+    border: #000000 solid;
+    width: 800px;
+    height: 500px;
+    background-color: #9b7ede;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr ;
+}
+.screen__feedback{
+    grid-column: 1/2;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template: 80px 80px 80px 80px auto / 1fr;
+}
+.feedback__fio, .feedback__mobile{
+    width: 200px;
+    height: 30px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 5);
+}
+.feedback__send{
+    width: 100px;
+    height: 60px;
+    grid-row: 5/5;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 5);
+}
+.screen__credit{
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template: 80px 80px 80px 80px auto/ 1fr;
+}
+.credit__quality{
+    align-items: center;
+    justify-items: center;
+}
+.quality__input {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #50514f;
+    margin-right: 8px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 5);
+    
+  }
+  
+  .quality__input::before {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #9b7ede;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.services__input{
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #50514f;
+    margin-right: 8px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 5);
+}
+.services__input::before{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #9b7ede;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.communication__input{
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #50514f;
+    margin-right: 8px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 5);
+}
+.communication__input::before{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #9b7ede;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.site__input{
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #50514f;
+    margin-right: 8px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 5);
+}
+.site__input::before{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #9b7ede;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.screen__close{
+    width: 100px;
+    height: 50px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 5);
+}
+.credit__title, .feedback__title, .services__text, .communication__text, .site__text, .quality__text {
+
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 5);
+}
